@@ -93,3 +93,10 @@ jobs:
       uses: github/codeql-action/analyze@v2
       with:
         category: "/language:${{matrix.language}}"
+        
+    - name: Upload SARIF
+      uses: actions/upload-artifact@v3
+      with:
+        name: sarif-results
+        # TODO: use the Github Codespace instead of the absolute path
+        path: /home/runner/work/OWASP-Benchmark-Java/results/java.sarif
