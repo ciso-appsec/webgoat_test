@@ -99,4 +99,4 @@ jobs:
       with:
         name: sarif-results
         # TODO: use the Github Codespace instead of the absolute path
-        path: /home/runner/work/OWASP-Benchmark-Java/results/java.sarif
+        path: /home/runner/work/webgoat_test/results/java.sarif
